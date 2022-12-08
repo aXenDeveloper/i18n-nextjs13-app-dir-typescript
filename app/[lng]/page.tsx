@@ -8,12 +8,12 @@ interface Props {
 }
 
 export default async function Page({ params: { lng } }: Props) {
-  const { t } = await useTranslation(lng, ['buttons'], 'post');
+  const { t } = await useTranslation(lng, ['buttons']);
 
   return (
     <>
       <h1>{t('name')}</h1>
-      <Link href={`/${lng}/test`}>{t('test')}</Link>
+      <Link href={`/${lng}/test`}>{t('test3')}</Link>
     </>
   );
 }

@@ -12,7 +12,7 @@ export default async function Page({ params: { lng } }: Props) {
 
   return (
     <>
-      <h1>{t('test')}</h1>
+      <h1>{t('test2')}</h1>
       <Link href={`/${lng}`}>{t('page')}</Link>
     </>
   );
