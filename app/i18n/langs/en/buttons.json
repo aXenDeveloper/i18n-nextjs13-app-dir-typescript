@@ -1,4 +1,4 @@
 {
-  "page": "Go to first page",
-  "test3": "Go to Test Page"
+  "first_page": "Go to first page",
+  "test_page": "Go to Test Page"
 }

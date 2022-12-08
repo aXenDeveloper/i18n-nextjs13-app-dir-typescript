@@ -13,9 +13,9 @@ export default async function Page({ params: { lng } }: Props) {
 
   return (
     <>
-      <h1>{t('test2')}</h1>
+      <h1>{t('name_test')}</h1>
       <Counter lng={lng} />
-      <Link href={`/${lng}`}>{t('page')}</Link>
+      <Link href={`/${lng}`}>{t('first_page')}</Link>
     </>
   );
 }
