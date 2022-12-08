@@ -1,5 +1,7 @@
 {
   "test": "Test EN",
   "name": "First Page EN",
-  "test2": "Go to Test Page"
+  "test2": "Go to Test Page",
+  "count_one": "{{ count }} item",
+  "count_other": "{{ count }} items"
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useTranslation } from '../../i18n';
+import { Counter } from './components/Counter';
 
 interface Props {
   params: {
@@ -13,6 +14,7 @@ export default async function Page({ params: { lng } }: Props) {
   return (
     <>
       <h1>{t('test2')}</h1>
+      <Counter lng={lng} />
       <Link href={`/${lng}`}>{t('page')}</Link>
     </>
   );
