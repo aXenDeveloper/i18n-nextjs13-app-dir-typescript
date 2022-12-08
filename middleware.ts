@@ -18,7 +18,10 @@ export function middleware(req: NextRequest) {
   if (!lng) lng = CONFIG_i18N_FALLBACK_LNG;
 
   // Redirect if lng in path is not supported
-  if (!CONFIG_i18N_LANGUAGES.some(loc => req.nextUrl.pathname.startsWith(`/${loc}`))) {
+  if (
+    !CONFIG_i18N_LANGUAGES.some(loc => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
+    !req.nextUrl.pathname.startsWith('/_next')
+  ) {
     return NextResponse.redirect(new URL(`/${lng}${req.nextUrl.pathname}`, req.url));
   }
 
